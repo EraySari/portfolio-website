@@ -20,7 +20,6 @@ export default function GlobeCanvas() {
 
     const handleContextRestored = () => {
       console.log("WebGL context restored");
-      // Canvas'ı yeniden oluştur
       setKey((prev) => prev + 1);
     };
 
@@ -49,7 +48,6 @@ export default function GlobeCanvas() {
         }}
         onCreated={({ gl }) => {
           gl.setClearColor(0x000000, 0);
-          // Canvas referansını sakla
           canvasRef.current = gl.domElement;
         }}
         style={{ width: "100%", height: "100%" }}

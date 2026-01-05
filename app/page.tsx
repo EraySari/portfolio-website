@@ -9,7 +9,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero + ValueProps Section with Stars Background */}
       <section className="relative overflow-hidden">
         <Stars />
         <Container className="relative z-10">
@@ -18,13 +17,11 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* SelectedWork + TechChips Section with Clean Background */}
       <section className="bg-zinc-950">
         <Container>
           <SelectedWork />
           <TechChips />
 
-          {/* Final CTA Section */}
           <div className="py-20 sm:py-32">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl sm:text-4xl font-bold text-zinc-100 mb-6">

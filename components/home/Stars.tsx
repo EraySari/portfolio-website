@@ -20,10 +20,10 @@ export default function Stars() {
     const newStars = Array.from({ length: starCount }, () => ({
       x: Math.random() * 100,
       y: Math.random() * 100,
-      size: Math.random() * 2 + 0.5, // 0.5px to 2.5px
-      delay: Math.random() * 3, // Random animation delay
-      opacity: Math.random() * 0.6 + 0.3, // 0.3 to 0.9
-      duration: 2 + Math.random() * 3, // 2s to 5s
+      size: Math.random() * 2 + 0.5,
+      delay: Math.random() * 3,
+      opacity: Math.random() * 0.6 + 0.3,
+      duration: 2 + Math.random() * 3,
     }));
     setStars(newStars);
   }, []);
