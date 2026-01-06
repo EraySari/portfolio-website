@@ -1,30 +1,30 @@
-import { Zap, Search, Code } from "lucide-react";
+import { PanelLeft, Gauge, Code } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const valueProps = [
   {
-    icon: Zap,
-    title: "High-performance Next.js websites",
+    icon: PanelLeft,
+    title: "CMS Panels & Real-World Features",
     description:
-      "Optimized for speed and user experience with modern React patterns and server-side rendering.",
+      "Built complex CMS interfaces including support dashboards, event logs, and chat-based systems with real production use cases.",
   },
   {
-    icon: Search,
-    title: "SEO-ready, accessible UI",
+    icon: Gauge,
+    title: "Performance-Focused UI",
     description:
-      "Built with semantic HTML, ARIA attributes, and best practices for search engines and screen readers.",
+      "Improved UX and performance using infinite scrolling, IntersectionObserver, and optimized data loading strategies.",
   },
   {
     icon: Code,
-    title: "Clean, scalable frontend architecture",
+    title: "Scalable Frontend Architecture",
     description:
-      "Maintainable codebases with TypeScript, component-driven development, and testing strategies.",
+      "Built scalable React applications including full e-commerce flows, role-based access control, and reusable UI components.",
   },
 ];
 
 export default function ValueProps() {
   return (
-    <section className="py-20 sm:py-32">
+    <section className="py-20 sm:py-32 mt-40">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-30">
         {valueProps.map((prop, index) => {
           const Icon = prop.icon;
@@ -49,9 +49,9 @@ export default function ValueProps() {
                   "transition-colors duration-200"
                 )}
               >
-                <Icon className="w-6 h-6 text-foreground" />
+                <Icon className="w-6 h-6 text-zinc-300" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-2">
+              <h3 className="text-xl font-semibold text-zinc-300 mb-2">
                 {prop.title}
               </h3>
               <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">

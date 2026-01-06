@@ -23,6 +23,10 @@ export interface ResumeData {
     tools: string[];
     languages: string[];
   };
+  technologies: {
+    usingNow: string[];
+    learning: string[];
+  };
   education: Array<{
     institution: string;
     degree: string;
@@ -52,9 +56,10 @@ export const resumeEN: ResumeData = {
       role: "Frontend Developer",
       period: "2025 May - 2025 September",
       description: [
-        "Developed and maintained high-performance React applications using Next.js",
-        "Collaborated with design and backend teams to deliver scalable solutions",
-        "Optimized applications for performance and accessibility",
+        "Built the Support and Event Log pages of the CMS panel from scratch",
+        "Implemented a chat-based support system (WhatsApp-like) with conversation view, unread message prioritization, sorting, search, advanced filtering, and detailed views",
+        "Improved performance and user experience by implementing infinite scrolling and optimizing data loading using Intersection Observer",
+        "Worked with scalable frontend architecture and complex state management",
       ],
     },
     {
@@ -62,38 +67,52 @@ export const resumeEN: ResumeData = {
       role: "Frontend Developer Intern",
       period: "2025 March - 2025 May",
       description: [
-        "Built responsive web applications with React and TypeScript",
-        "Implemented modern UI/UX patterns and best practices",
-        "Contributed to improving code quality and developer experience",
+        "Redesigned Payment and Payout pages with a modern UI/UX to improve transaction and approval workflows",
+        "Implemented internationalization (i18n) across multiple modules",
+        "Gained hands-on experience in a production-grade energy management software platform",
       ],
     },
   ],
   selectedProjects: [
     {
-      title: "Project One",
+      title: "LastBite - Donate App",
       description:
-        "A high-performance web application built with Next.js and TypeScript.",
-      technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-      link: "/work",
+        "Frontend development of a donation and discount platform enabling users to purchase or donate products close to their expiration date. The application features a complete e-commerce flow with role-based access control.",
+      technologies: ["React", "Redux", "TypeScript", "Tailwind CSS", "Axios"],
+      link: "https://github.com/EraySari/donate-app",
     },
     {
-      title: "Project Two",
+      title: "The Wishpering Pines",
       description:
-        "Modern e-commerce platform with optimized UX and performance.",
-      technologies: ["React", "Next.js", "Node.js"],
+        "A cabin reservation web application developed as part of a team project, focusing on clean architecture, reusable components, and seamless backend integration.",
+      technologies: ["React", "React Query", "Tailwind CSS"],
+      link: "https://github.com/EraySari/management_of_json_data",
     },
   ],
   skills: {
     technical: [
       "React",
+      "Redux",
       "Next.js",
       "TypeScript",
       "JavaScript",
-      "Tailwind CSS",
       "HTML/CSS",
     ],
     tools: ["Git", "Jest", "Testing Library", "Webpack", "Vite"],
-    languages: ["English B1", "German B1"],
+    languages: ["Turkish Native", "English B1", "German B1"],
+  },
+  technologies: {
+    usingNow: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "Next.js",
+      "Tailwind CSS",
+      "Git",
+    ],
+    learning: ["Node.js", "TypeScript"],
   },
   education: [
     {
@@ -106,11 +125,11 @@ export const resumeEN: ResumeData = {
   ],
   references: [
     {
-      name: "John Doe",
-      role: "Engineering Manager",
-      company: "Company Name",
+      name: "Halit Dogan",
+      role: "Co-Founder & CEO",
+      company: "Sarjnerde",
       testimonial:
-        "Eray is an exceptional frontend engineer with a strong focus on performance and user experience. Highly recommended.",
+        "I am confident that Eray will continue to create significant value in future roles through his dedication, integrity, and professionalism.",
     },
   ],
 };

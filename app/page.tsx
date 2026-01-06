@@ -17,10 +17,10 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-zinc-950">
+      <section>
         <Container>
-          <SelectedWork />
           <TechChips />
+          <SelectedWork />
 
           <div className="py-20 sm:py-32">
             <div className="max-w-2xl mx-auto text-center">

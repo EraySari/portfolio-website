@@ -11,7 +11,7 @@ export default function Downloads() {
         className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
       >
         <Download className="w-4 h-4" />
-        Download CV
+        View CV
       </Link>
 
       <Link

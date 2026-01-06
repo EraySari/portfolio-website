@@ -1,3 +1,6 @@
+import { FileText } from "lucide-react";
+import Link from "next/link";
+
 interface EducationItem {
   institution: string;
   degree: string;
